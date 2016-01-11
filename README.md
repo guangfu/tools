@@ -38,6 +38,7 @@ collectInfo(REPORT_URL /*信息上传地址*/)
 
 抽象组件，拥有ready, destory，trigger，on，off方法和el，events属性，提供事件自动绑定功能
 调用方式：
+
 ```js
 import AbstractComponent from 'abstractComponent';
 let component = new AbstractComponent({
@@ -51,6 +52,14 @@ let component = new AbstractComponent({
   executeAction() {}
 })
 ```
+
+## url.sj
+
+对链接url的封装的一些简便方法
+
+## device.js
+
+封装一些设备判断方法
 
 ## _class.js
 
