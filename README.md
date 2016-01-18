@@ -34,14 +34,14 @@ collectInfo(REPORT_URL /*信息上传地址*/)
 
 传值验证，内置num，notNull，phone，mail， character，url验证规则
 
-## abstractComponent.js
+## component.js
 
 抽象组件，拥有ready, destory，trigger，on，off方法和el，events属性，提供事件自动绑定功能
 调用方式：
 
 ```js
-import AbstractComponent from 'abstractComponent';
-let component = new AbstractComponent({
+import Component from 'Component';
+let component = new Component({
   el: '#id'
   events: {
     'click button': 'clickBtn',
@@ -61,14 +61,28 @@ let component = new AbstractComponent({
 
 封装一些设备判断方法
 
-## _class.js
+## class.js
 
 模拟类的继承，通过extend方法操作，每一个继承后都是一个新类，同时也拥有extend方法
 调用方式:
+
 ```js
-import _class from '_class.js';
+import _class from 'class.js';
 let newClass = _class.extend({
   init() {},
   method() {}
 })
 ```
+
+## jsonp.js
+
+jsonp跨域
+
+
+## storageWithTimestamp.js
+
+带有时间戳的localStorage存储功能
+
+## layout-base.js
+
+移动端布局rem和viewport设置
